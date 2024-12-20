@@ -1,0 +1,145 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: deepskyblue;    
+}
+
+#todoList{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+#todoList .container{
+    width: 400px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 6px;
+    margin-top: 50px;
+    transition: all ease 0.5s;
+}
+#todoList .container h1{
+    margin: 20px 0px;
+}
+#todoList .container .createTask{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+#todoList .container .createTask input{
+        width: 70%;
+        height: 100%;
+        font-size: 14px;
+        font-weight: 700;
+        padding-left: 10px;
+        border: 1px solid rgb(108, 108, 196);
+        border-radius: 5px;
+}
+#todoList .container .createTask button{
+     width: 20%;
+     height: 100%;
+     font-size: 16px;
+     font-weight: 500;
+     background-color: blue;
+     color: #fff;
+     border: 1px solid #fff;
+     border-radius: 5px;
+     cursor: pointer;
+}
+#todoList .container .searchTask{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+#todoList .container .searchTask input{
+        width: 90%;
+        height: 100%;
+        font-size: 14px;
+        font-weight: 700;
+        padding-left: 10px;
+        border: 1px solid rgb(108, 108, 196);
+        border-radius: 5px;
+}
+#todoList .container .dataHandle{
+    width: 90%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+#todoList .container .dataHandle .allAndComplete{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 180px;
+    font-size: 18px;
+    font-weight: 700;
+}
+#todoList .container .dataHandle .allAndComplete span{
+    cursor: pointer;
+}
+#todoList .container .dataHandle  button{
+    font-size: 16px;
+    font-weight: 500;
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#todoList .container .mainTaskContainer{
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    overflow: scroll;
+    scrollbar-width:  none;
+    transition-duration: 1s;
+}
+#todoList .container .taskContainer{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+    margin: 0px 0px 20px 20px;
+    transition-duration: 1s;
+}
+#todoList .container .taskContainer .task{
+    width: 300px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+#todoList .container .taskContainer .task input{
+    margin-right: 20px;
+    cursor: pointer;
+}
+#todoList .container .taskContainer .deleteAndEdit{
+    width: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+#todoList .container .taskContainer .deleteAndEdit i{
+    cursor: pointer;
+    color: #000;
+}
